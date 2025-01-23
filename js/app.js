@@ -15,7 +15,8 @@ const musics = [
   "Abrobey- Qimmat Dunyo",
   "Jah Khalib - Медина",
   "Konsta-Qahramonlar",
-  "Sherali Jo'rayev - Inson o'zing",
+  "Где ты теперь и с кем",
+  "ჩუბინა ( @Kxan_Muz )",
 ];
 
 function changeMusic(index) {

@@ -65,21 +65,21 @@ button {
   gap: 20px;
   justify-content: center;
 
-  i{
+  i {
     height: 40px;
-    
 
     &:hover {
       color: tomato;
+      transition: 0.3s ease;
     }
   }
 }
 
-#backward{
+#backward {
   margin-right: 35px;
 }
 
-#play{
+#play {
   margin-right: 35px;
 }
 
@@ -103,6 +103,7 @@ button {
 
   &:hover {
     height: 7px;
+    transition: 0.3s ease;
   }
 }
 
