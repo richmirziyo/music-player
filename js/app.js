@@ -76,4 +76,4 @@ playBtn.addEventListener("click", () => {
 });
 
 forwardBtn.addEventListener("click", nextMusic);
-backwardBtn.addEventListener("click", prevMusic);
+// backwardBtn.addEventListener("click", prevMusic);
