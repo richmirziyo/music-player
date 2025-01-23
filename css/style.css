@@ -20,7 +20,20 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#ee10b0, #735ed2, #0e9eef);
+  font-family: "Raleway", sans-serif;
+  /* background: linear-gradient(#ee10b0, #735ed2, #0e9eef); */
+  /* background: linear-gradient(45deg, #a8e8d6, #e6d5e5, #ffcc99); */
+  /* background: linear-gradient(60deg, #f7b7a3, #f3e84d, #a4d6e1); */
+  background: radial-gradient(circle, #ff6f61, #5daf7a);
+}
+
+#container {
+  width: 450px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 20px;
+  background: linear-gradient(45deg, #6bbe45, #e1b7e2, #f6b61d);
+  box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
 }
 
 img {
@@ -37,7 +50,6 @@ img {
 #title {
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Playfair Display", serif;
 }
 
 button {
@@ -52,6 +64,23 @@ button {
   align-items: center;
   gap: 20px;
   justify-content: center;
+
+  i{
+    height: 40px;
+    
+
+    &:hover {
+      color: tomato;
+    }
+  }
+}
+
+#backward{
+  margin-right: 35px;
+}
+
+#play{
+  margin-right: 35px;
 }
 
 .cover-image {
@@ -63,6 +92,30 @@ button {
   animation-play-state: running;
 }
 
+.proccess {
+  width: 400px;
+  height: 4px;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+  cursor: pointer;
+
+  &:hover {
+    height: 7px;
+  }
+}
+
+.proccess-container {
+  height: inherit;
+  border-radius: inherit;
+  background-color: tomato;
+  width: 0%;
+
+  &:hover {
+    height: inherit;
+  }
+}
 @keyframes rotating {
   0% {
     transform: rotate(0deg);
