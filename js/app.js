@@ -34,17 +34,17 @@ function nextMusic() {
 }
 
 
-// musiqani ortga qaytarish uchun
-function prevMusic() {
-  if (musics.length - 1 <= indexConten) {
-    indexConten = 0;
-  } else {
-    indexConten++;
-  }
+// // musiqani ortga qaytarish uchun
+// function prevMusic() {
+//   if (musics.length - 1 <= indexConten) {
+//     indexConten = 0;
+//   } else {
+//     indexConten++;
+//   }
 
-  changeMusic(indexConten);
-  play();
-}
+//   changeMusic(indexConten);
+//   play();
+// }
 
 audio.volume = voice.value / 100;
 
