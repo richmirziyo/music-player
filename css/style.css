@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: "Inter", sans-serif; */
+/* font-family: "Lora", serif; */
+/* font-family: 'Playfair Display', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ee10b0, #735ed2, #0e9eef);
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cover-image {
+  animation: rotating 18s infinite linear;
+  animation-play-state: paused;
+}
+
+#container.playing .cover-image {
+  animation-play-state: running;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
