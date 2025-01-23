@@ -37,45 +37,7 @@ function nextMusic() {
   play();
 }
 
-// // Oldingi musiqa
-// function prevMusic() {
-//   // Musiqalar ro'yxatida bir qadam orqaga o'tamiz
-//   indexContent = (indexContent - 1 + musics.length) % musics.length;
 
-//   // Tanlangan musiqani yangilaymiz
-//   changeMusic(indexContent);
-
-//   // Musiqani o'ynatamiz
-//   play();
-// }
-
-// function prevMusic() {
-//   if (indexContent > 0) {
-//     indexContent = indexContent - 1; // Oldingi musiqa
-//   } else {
-//     indexContent = musics.length - 1; // Oxirgi musiqaga o'tish
-//   }
-//   changeMusic(indexContent);
-//   play();
-// }
-
-// function prevMusic() {
-//   indexContent = (indexContent - 1 + musics.length) % musics.length;
-//   changeMusic(indexContent);
-//   play();
-// }
-
-// // musiqani ortga qaytarish uchun
-// function prevMusic() {
-//   if (musics.length - 1 <= indexConten) {
-//     indexConten = 0;
-//   } else {
-//     indexConten++;
-//   }
-
-//   changeMusic(indexConten);
-//   play();
-// }
 
 audio.volume = voice.value / 100;
 
@@ -88,8 +50,6 @@ audioVolum.style.cssText = `
 font-size:19px;
 font-family: "Lora";
 `;
-
-
 
 function play() {
   container.classList.add("playing");
@@ -118,8 +78,6 @@ function playingMusic() {
   let currentTime = audio.currentTime;
   proccessContainer.style.width = `${(currentTime / duration) * 100}%`;
 }
-
-
 
 forwardBtn.addEventListener("click", nextMusic);
 // backwardBtn.addEventListener("click", prevMusic);
