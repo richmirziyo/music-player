@@ -38,8 +38,6 @@ function nextMusic() {
   play();
 }
 
-
-
 audio.volume = voice.value / 100;
 
 voice.addEventListener("input", () => {
@@ -50,6 +48,9 @@ voice.addEventListener("input", () => {
 audioVolum.style.cssText = `
 font-size:19px;
 font-family: "Lora";
+padding-left: 20px;
+font-weight: 700;
+ text-align: center;
 `;
 
 function play() {
