@@ -20,7 +20,7 @@ const musics = [
 
 function changeMusic(index) {
   cover.src = `../images/${musics[index]}.jpg`;
-  audio.src = `./music/${musics[index]}.mp3`;
+  audio.src = `../music/${musics[index]}.mp3`;
   title.textContent = musics[index];
 }
 
