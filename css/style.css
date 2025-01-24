@@ -45,7 +45,17 @@ body {
   padding: 20px;
   background: linear-gradient(90deg, #2c5364, #37555f, #2c5263);
   box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+
+  &:hover {
+    transition: 0.3s ease;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 94, 255, 0.4),
+      0 -5px 20px rgba(0, 255, 255, 0.5), 0 15px 25px rgba(6, 64, 111, 0.5),
+      -10px -10px 30px rgba(58, 38, 237, 0.4),
+      10px -15px 40px rgba(68, 0, 255, 0.314), -15px 20px 35px rgba(0, 0, 255, 0.3); /* Moviy soya */
+    cursor: pointer;
+  }
 }
+
 
 #voice {
   width: 300px;
@@ -98,6 +108,7 @@ button {
 
   i {
     height: 40px;
+    font-size: 25px;
 
     &:hover {
       color: tomato;
@@ -172,10 +183,10 @@ button {
 
   #container {
     width: 350px;
-    height: 350px;
+    height: 380px;
     border-radius: 8px;
     padding: 20px;
-    background: linear-gradient(45deg, #6bbe45, #e1b7e2, #f6b61d);
+    background: linear-gradient(90deg, #2c5364, #37555f, #32637a);
     box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
   }
 

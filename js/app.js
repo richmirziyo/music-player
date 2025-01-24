@@ -17,6 +17,9 @@ const musics = [
   "Konsta-Qahramonlar",
   "Где ты теперь и с кем",
   "ჩუბინა ( @Kxan_Muz )",
+  "I wanna be yours",
+  "Summertime sadness ( @Kxan_Muz )",
+  "как ты там ( speed up )",
 ];
 
 function changeMusic(index) {
@@ -32,6 +35,17 @@ function nextMusic() {
     indexConten = 0;
   } else {
     indexConten++;
+  }
+
+  changeMusic(indexConten);
+  play();
+}
+
+function prevMusic() {
+  if (musics.length - 1  <= indexConten) {
+    indexConten = 0;
+  } else {
+    indexConten--;
   }
 
   changeMusic(indexConten);
@@ -92,6 +106,6 @@ function playingMusic() {
 }
 
 forwardBtn.addEventListener("click", nextMusic);
-// backwardBtn.addEventListener("click", prevMusic);
+backwardBtn.addEventListener("click", prevMusic);
 audio.addEventListener("ended", nextMusic);
 audio.addEventListener("timeupdate", playingMusic);
