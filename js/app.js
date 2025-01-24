@@ -75,6 +75,16 @@ playBtn.addEventListener("click", () => {
   }
 });
 
+cover.addEventListener("click", () => {
+  const isPlaying = container.classList.contains("playing");
+
+  if (isPlaying) {
+    pause();
+  } else {
+    play();
+  }
+});
+
 function playingMusic() {
   let duration = audio.duration;
   let currentTime = audio.currentTime;
